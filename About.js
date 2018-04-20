@@ -36,7 +36,7 @@ export default class About extends React.Component{
 
 
   goGitHub = () => {
-    Linking.openURL('https://github.com/MBalciunas/FibonacciDP');
+    Linking.openURL('https://github.com/MBalciunas/My-Profile');
   }
   render(){
     return (
@@ -50,7 +50,7 @@ export default class About extends React.Component{
         <Text style={{color: 'gray', fontSize: 10, alignSelf: 'flex-end', marginLeft: 10}}>{this.state.symbols}/120</Text> 
         <Text style={{fontSize: 20, marginTop: 20, marginHorizontal: 20, textAlign: 'center'}}>I live in city where current temperature is</Text>
         <Text style={{alignSelf: 'center', fontSize: 30, marginTop: 10}}>{this.state.temperature} °C</Text>
-        <View style={{ alignSelf: 'center', height: 50, width: 100, marginTop: 20}}>
+        <View style={{ alignSelf: 'center', height: 50, width: 200, marginTop: 20}}>
           <Button title="My GitHub profile" color="red" onPress={this.goGitHub} />
         </View>
       </View>
